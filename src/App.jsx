@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+  const BUILD = import.meta.env.VITE_REACT_APP_BUILD
   const [count, setCount] = useState(0)
   return (
     <>
@@ -25,7 +26,7 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-         {import.meta.env.VITE_REACT_APP_BUILD}
+         {BUILD}
       </p>
     </>
   )
